@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MP_Guest.master.cs" Inherits="Master_Pages_MP_Guest" %>
+
+<!DOCTYPE html>
+
+<html lang="es-cl">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+    <link type="text/css" rel="stylesheet" href="../css/uikit.min.css" />
+    <link href="../css/Personal.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f19bff">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+    <script src="../js/sweetalert.min.js"></script>
+    <script src="../js/PersonalScript.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="font-family:'Indie Flower', cursive;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
