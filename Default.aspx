@@ -3,12 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div class="uk-section uk-padding" style="background-color:#8BEAAF">
+    <div class="uk-section uk-padding" style="background-color:#8bea8b">
         <h1 class="uk-light cLetter"><b>Bienvenido</b></h1>
     </div>
 
     <div class="uk-section seccion-diagonal" style="background-color: #ffffff">
-        <div class="fondo-diagonal" style="background-color: #8BEAAF;"></div>
+        <div class="fondo-diagonal" style="background-color: #8bea8b;"></div>
     </div>
     <div class="uk-section uk-padding uk-text-center">
             <h1 class="cLetter">Bienvenido</h1>
