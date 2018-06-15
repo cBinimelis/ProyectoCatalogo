@@ -65,8 +65,8 @@
 
 .boton-ver {
     background: #87cefa;
-    border: none;
-    color: #f2f2f2;
+    border: 1px solid #87cefa;
+    color: #ffffff;
     position: relative;
     box-sizing: border-box;
     transition: all 250ms ease;

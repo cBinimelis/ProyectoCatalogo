@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div class="uk-section uk-padding" style="background-color:#8bea8b">
+    <div class="uk-section uk-padding" style="background-color: #8bea8b">
         <h1 class="uk-light cLetter"><b>Bienvenido</b></h1>
     </div>
 
@@ -11,13 +11,74 @@
         <div class="fondo-diagonal" style="background-color: #8bea8b;"></div>
     </div>
     <div class="uk-section uk-padding uk-text-center">
-            <h1 class="cLetter">Bienvenido</h1>
+        <h1 class="cLetter">Bienvenido</h1>
 
         <div class="uk-container uk-align-center">
             <a class="boton-kuki uk-button">Boton de Prueba 1</a>
         </div>
-        <div class="uk-container uk-align-center" >
+        <div class="uk-container uk-align-center">
             <a class="boton-ver uk-button">Boton de Prueba 2</a>
+        </div>
+    </div>
+
+    <div class="uk-section seccion-diagonal" style="background-color: #8bea8b
+
+">
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+    </div>
+
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="uk-child-width-1-3 uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="../img/models/lg k10.jpg" alt="" uk-cover>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">K10</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <a class=" boton-ver uk-button">VER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="../img/models/lg k10.jpg" alt="" uk-cover>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Media Left</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="../img/models/lg k10.jpg" alt="" uk-cover>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Media Left</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>
