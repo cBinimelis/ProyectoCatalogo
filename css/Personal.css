@@ -64,15 +64,19 @@
 }
 
 .boton-ver {
-    background: #87cefa;
-    border: 1px solid #87cefa;
+    background: #8BEAAF;
+    border: 1px solid #8BEAAF;
     color: #ffffff;
+    border-radius:5px;
     position: relative;
     box-sizing: border-box;
     transition: all 250ms ease;
 }
 
-
+    .boton-ver:hover {
+        background: #ffffff;
+        color: #8BEAAF;
+    }
 
 
 .boton-kuki {

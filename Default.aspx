@@ -21,27 +21,23 @@
         </div>
     </div>
 
-    <div class="uk-section seccion-diagonal" style="background-color: #8bea8b
-
-">
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-8bea8b        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
+    
+    <div class="uk-section seccion-diagonal" style="background-color: #8bea8b">
+        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
     </div>
 
     <div class="uk-section">
         <div class="uk-container">
-            <div class="uk-child-width-1-3 uk-grid-match" uk-grid>
+            <div class="uk-padding uk-flex-middle">
+                <asp:TextBox CssClass="uk-input uk-form-width-large" ID="TextBox1" runat="server"></asp:TextBox>
+                <a class="boton-kuki uk-button uk-width-small">Buscar</a>
+            </div>
+            <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-match" uk-grid>
                 <div>
-                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-box-shadow-hover-large" uk-grid>
                         <div class="uk-card-media-left uk-cover-container">
                             <img src="../img/models/lg k10.jpg" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
                         </div>
                         <div>
                             <div class="uk-card-body">
