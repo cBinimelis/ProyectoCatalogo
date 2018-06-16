@@ -274,7 +274,7 @@
 
     .diagonal .fondo-parallax {
         position: absolute;
-        top: -150%;
+        top: -100%;
         bottom: -50%;
         left: 0;
         right: 0;

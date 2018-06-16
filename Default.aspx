@@ -23,11 +23,9 @@
     <div class="uk-section-small"></div>
 <div class="diagonal uk-height-large">
   <span class="fondo-parallax" style="background-image:url(../img/BG1.jpg)"></span>
-  <div class="content">
-  </div>
 </div>
 
-    <div class="uk-section-small"></div>
+    <div class="uk-section-small" style="background: #8bea8b"></div>
 
     <div class="uk-section">
         <div class="uk-container">
