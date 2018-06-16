@@ -20,11 +20,14 @@
             <a class="boton-ver uk-button">Boton de Prueba 2</a>
         </div>
     </div>
+    <div class="uk-section-small"></div>
+<div class="diagonal uk-height-large">
+  <span class="fondo-parallax" style="background-image:url(../img/BG1.jpg)"></span>
+  <div class="content">
+  </div>
+</div>
 
-    
-    <div class="uk-section seccion-diagonal" style="background-color: #8bea8b">
-        <div class="fondo-diagonal" style="background-color: #ffffff;"></div>
-    </div>
+    <div class="uk-section-small"></div>
 
     <div class="uk-section">
         <div class="uk-container">

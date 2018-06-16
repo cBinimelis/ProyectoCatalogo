@@ -11,6 +11,20 @@
 $(window).on('load', function () {
     $('body').toggleClass('loaded');
     Contar();
+
+
+});
+
+$(document).ready(function () {
+
+    var top;
+    $(window).scroll(function () {
+        top = ($(window).scrollTop() * 0.4) + 'px';
+        $('.diagonal .fondo-parallax').css({
+            'background-position': '0 ' + top
+        });
+    });
+
 });
 
 function Contar() {
