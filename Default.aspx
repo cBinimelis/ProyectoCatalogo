@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="uk-section uk-padding" style="background-color: #8bea8b">
-        <h1 class="uk-light cLetter"><b>Bienvenido</b></h1>
+        <h1 class="uk-light cLetter"><b>Catalogo de Smartphones</b></h1>
     </div>
 
     <div class="uk-section seccion-diagonal" style="background-color: #ffffff">
@@ -25,11 +25,12 @@
   <span class="fondo-parallax" style="background-image:url(../img/BG1.jpg)"></span>
 </div>
 
-    <div class="uk-section-small" style="background: #8bea8b"></div>
+    <div class="uk-section-small"></div>
 
-    <div class="uk-section">
+    <div id="Catalogo" class="uk-section">
         <div class="uk-container">
-            <div class="uk-padding uk-flex-middle">
+            <h1 class="cLetter uk-text-center uk-padding-small">Catalogo de Equipos</h1>
+            <div class="uk-padding uk-flex-center" uk-grid>
                 <asp:TextBox CssClass="uk-input uk-form-width-large" ID="TextBox1" runat="server"></asp:TextBox>
                 <a class="boton-kuki uk-button uk-width-small">Buscar</a>
             </div>
