@@ -20,6 +20,15 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <div id="loader-wrapper">
+        <div id="loader" class="uk-position-center">
+            <div id="ball-1" class="circle"></div>
+            <div id="ball-2" class="circle"></div>
+            <div id="ball-3" class="circle"></div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <div>
         <div class="cLetter" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200" style="background-color: #8bea8b;">
 
@@ -40,7 +49,12 @@
                             </li>
                             <li><a href="#">Item</a></li>
                         </ul>
-
+                        
+                <div class="uk-navbar-right">
+                    <a href="Inicio.aspx" class="uk-navbar-item uk-logo">
+                        <img src="../img/Jumbo.ico" style="height: 100%" alt="Logo" />
+                    </a>
+                </div>
                     </div>
                 </div>
             </nav>
