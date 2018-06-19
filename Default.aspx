@@ -21,9 +21,9 @@
         </div>
     </div>
     <div class="uk-section-small"></div>
-<div class="diagonal uk-height-large">
-  <span class="fondo-parallax" style="background-image:url(../img/BG1.jpg)"></span>
-</div>
+    <div class="diagonal uk-height-large">
+        <span class="fondo-parallax" style="background-image: url(../img/BG1.jpg)"></span>
+    </div>
 
     <div class="uk-section-small"></div>
 
@@ -34,6 +34,8 @@
                 <asp:TextBox CssClass="uk-input uk-form-width-large" ID="TextBox1" runat="server"></asp:TextBox>
                 <a class="boton-kuki uk-button uk-width-small">Buscar</a>
             </div>
+
+            <%--BASE DE DISEÑO PARA CATALOGO--%>
             <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-match" uk-grid>
                 <div>
                     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-box-shadow-hover-large" uk-grid>
@@ -77,6 +79,11 @@
                     </div>
                 </div>
             </div>
+
+            <asp:Repeater ID="rpt_Smartphones" runat="server" OnItemCommand="rpt_Smartphones_ItemCommand">
+
+            </asp:Repeater>
+
         </div>
     </div>
 </asp:Content>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="bd_catalogo" Class="ConexionBDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=bd_catalogo;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="bd_catalogoConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Fabricante" Member="Fabricante">
+    <Type Name="Fabricante">
+      <Column Name="id_Fabricante" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Fabricante_Smartphone" Member="Smartphone" ThisKey="id_Fabricante" OtherKey="id_Fabricante" Type="Smartphone" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Smartphone" Member="Smartphone">
+    <Type Name="Smartphone">
+      <Column Name="id_Smartphone" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Imagen" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="id_Fabricante" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Fabricante_Smartphone" Member="Fabricante" ThisKey="id_Fabricante" OtherKey="id_Fabricante" Type="Fabricante" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

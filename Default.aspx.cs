@@ -11,4 +11,9 @@ public partial class _Default : System.Web.UI.Page
     {
 
     }
+
+    protected void rpt_Smartphones_ItemCommand(object source, RepeaterCommandEventArgs e)
+    {
+
+    }
 }
