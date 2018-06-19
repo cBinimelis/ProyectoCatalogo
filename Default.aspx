@@ -80,10 +80,27 @@
                 </div>
             </div>
 
-            <asp:Repeater ID="rpt_Smartphones" runat="server" OnItemCommand="rpt_Smartphones_ItemCommand">
-
-            </asp:Repeater>
-
+            <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-match" uk-grid>
+                <asp:Repeater ID="rpt_Smartphones" runat="server" OnItemCommand="rpt_Smartphones_ItemCommand">
+                    <ItemTemplate>
+                        <div>
+                            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-box-shadow-hover-large" uk-grid>
+                                <div class="uk-card-media-left uk-cover-container">
+                                    <img src='../img/models/<%#Eval("Imagen")%>' alt="" uk-cover>
+                                    <canvas width="600" height="400"></canvas>
+                                </div>
+                                <div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title"><%#Eval("Nombre")%></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                        <asp:Button ID="btn_ver" CssClass="boton-ver uk-button" runat="server" Text="Ver" CommandName="Select" CommandArgument='<%# Eval("id_Smartphone") %>' />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
         </div>
     </div>
 </asp:Content>
