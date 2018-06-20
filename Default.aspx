@@ -40,7 +40,7 @@
                 <div>
                     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-box-shadow-hover-large" uk-grid>
                         <div class="uk-card-media-left uk-cover-container">
-                            <img src="../img/models/lg k10.jpg" alt="" uk-cover>
+                            <img src="../img/models/k10.jpg" alt="" uk-cover>
                             <canvas width="600" height="400"></canvas>
                         </div>
                         <div>
@@ -55,7 +55,7 @@
                 <div>
                     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                         <div class="uk-card-media-left uk-cover-container">
-                            <img src="../img/models/lg k10.jpg" alt="" uk-cover>
+                            <img src="../img/models/k10.jpg" alt="" uk-cover>
                         </div>
                         <div>
                             <div class="uk-card-body">
@@ -68,7 +68,7 @@
                 <div>
                     <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                         <div class="uk-card-media-left uk-cover-container">
-                            <img src="../img/models/lg k10.jpg" alt="" uk-cover>
+                            <img src="../img/models/k10.jpg" alt="" uk-cover>
                         </div>
                         <div>
                             <div class="uk-card-body">
@@ -80,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-match" uk-grid>
+            <%--            <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-match" uk-grid>
                 <asp:Repeater ID="rpt_Smartphones" runat="server" OnItemCommand="rpt_Smartphones_ItemCommand">
                     <ItemTemplate>
                         <div>
@@ -100,8 +100,57 @@
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
+            </div>--%>
+
+            <asp:ListView ID="PhoneList" DataKeyNames="id_Smartphone" runat="server" GroupPlaceholderID="GroupPH"
+                ItemPlaceholderID="ItemPH" OnPagePropertiesChanging="PhoneList_PagePropertiesChanging">
+                <LayoutTemplate>
+                    <asp:PlaceHolder runat="server" ID="GroupPH">
+                    </asp:PlaceHolder>
+                    <asp:DataPager ID="DataPager1" runat="server" PagedControlID="PhoneList" PageSize="9">
+                        <Fields>
+                            <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="false" ShowPreviousPageButton="true"
+                                ShowNextPageButton="false" />
+                            <asp:NumericPagerField ButtonType="Link" />
+                            <asp:NextPreviousPagerField ButtonType="Link" ShowNextPageButton="true" ShowLastPageButton="false" ShowPreviousPageButton="false" />
+                        </Fields>
+                    </asp:DataPager>
+                </LayoutTemplate>
+                <GroupTemplate>
+                    <asp:PlaceHolder runat="server" ID="ItemPH">
+                        <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-grid-match" uk-grid>
+
+                        </div>
+                    </asp:PlaceHolder>
+                </GroupTemplate>
+                <ItemTemplate>
+                    <div>
+                        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-box-shadow-hover-large" uk-grid>
+                            <div class="uk-card-media-left uk-cover-container">
+                                <img src='../img/models/<%#Eval("Imagen")%>' alt="" uk-cover>
+                                <canvas width="600" height="400"></canvas>
+                            </div>
+                            <div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title"><%#Eval("Nombre")%></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <asp:Button ID="btn_ver" CssClass="boton-ver uk-button" runat="server" Text="Ver" CommandName="Select" CommandArgument='<%# Eval("id_Smartphone") %>' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:ListView>
+
+            <%--LOADER--%>
+            <div id="load" class="uk-section-small">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
             </div>
-            <img id="loader" alt="" src="../img/loading.gif" style="display: none" />
         </div>
     </div>
 </asp:Content>
