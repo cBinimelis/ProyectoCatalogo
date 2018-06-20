@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link id="favicon1" runat="server" rel="shortcut icon" href="~/img/Jumbo.ico" type="image/x-icon" />
     <link type="text/css" rel="stylesheet" href="../css/uikit.min.css" />
     <link href="../css/Personal.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,9 +37,9 @@
                 <div class="uk-container uk-container-expand">
                     <div uk-navbar>
                         <ul class="uk-navbar-nav cLetter">
-                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li class="uk-active"><a href="#Inicio" uk-scroll>Inicio</a></li>
                             <li>
-                                <a href="#Catalogo">Equipos</a>
+                                <a href="#Catalogo" uk-scroll>Equipos</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li class="uk-active"><a href="#">Samsung</a></li>
@@ -49,12 +50,12 @@
                             </li>
                             <li><a href="#">Item</a></li>
                         </ul>
-                        
-                <div class="uk-navbar-right">
-                    <a href="Inicio.aspx" class="uk-navbar-item uk-logo">
-                        <img src="../img/Jumbo.ico" style="height: 100%" alt="Logo" />
-                    </a>
-                </div>
+
+                        <div class="uk-navbar-right">
+                            <a href="Inicio.aspx" class="uk-navbar-item uk-logo">
+                                <img src="../img/Jumbo.ico" style="height: 100%" alt="Logo" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
