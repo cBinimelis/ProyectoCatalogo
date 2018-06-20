@@ -274,8 +274,8 @@
 
     .diagonal .fondo-parallax {
         position: absolute;
-        top: -100%;
-        bottom: -50%;
+        top: -50%;
+        bottom: -100%;
         left: 0;
         right: 0;
         transform: skewY(3deg);

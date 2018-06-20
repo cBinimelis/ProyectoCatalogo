@@ -14,7 +14,7 @@
         <elementListCompartment Id="c8d46ba0-c6aa-4a17-8fb4-d170e49c2a0b" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ConexionBDDataContext/Fabricante/Fabricante_Smartphone" />
       <nodes>
         <classShapeMoniker Id="0984a39d-704a-4602-878c-d46f42a57b83" />

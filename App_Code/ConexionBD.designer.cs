@@ -82,6 +82,13 @@ public partial class ConexionBDDataContext : System.Data.Linq.DataContext
 			return this.GetTable<Smartphone>();
 		}
 	}
+	
+	[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.vPhones")]
+	public ISingleResult<vPhonesResult> vPhones()
+	{
+		IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+		return ((ISingleResult<vPhonesResult>)(result.ReturnValue));
+	}
 }
 
 [global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Fabricante")]
@@ -369,6 +376,86 @@ public partial class Smartphone : INotifyPropertyChanging, INotifyPropertyChange
 		if ((this.PropertyChanged != null))
 		{
 			this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+}
+
+public partial class vPhonesResult
+{
+	
+	private int _id_Smartphone;
+	
+	private string _Nombre;
+	
+	private string _Imagen;
+	
+	private string _Fabricante;
+	
+	public vPhonesResult()
+	{
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_Smartphone", DbType="Int NOT NULL")]
+	public int id_Smartphone
+	{
+		get
+		{
+			return this._id_Smartphone;
+		}
+		set
+		{
+			if ((this._id_Smartphone != value))
+			{
+				this._id_Smartphone = value;
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+	public string Nombre
+	{
+		get
+		{
+			return this._Nombre;
+		}
+		set
+		{
+			if ((this._Nombre != value))
+			{
+				this._Nombre = value;
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Imagen", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+	public string Imagen
+	{
+		get
+		{
+			return this._Imagen;
+		}
+		set
+		{
+			if ((this._Imagen != value))
+			{
+				this._Imagen = value;
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fabricante", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+	public string Fabricante
+	{
+		get
+		{
+			return this._Fabricante;
+		}
+		set
+		{
+			if ((this._Fabricante != value))
+			{
+				this._Fabricante = value;
+			}
 		}
 	}
 }

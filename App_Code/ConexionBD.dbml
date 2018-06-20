@@ -16,4 +16,12 @@
       <Association Name="Fabricante_Smartphone" Member="Fabricante" ThisKey="id_Fabricante" OtherKey="id_Fabricante" Type="Fabricante" IsForeignKey="true" />
     </Type>
   </Table>
+  <Function Name="dbo.vPhones" Method="vPhones">
+    <ElementType Name="vPhonesResult">
+      <Column Name="id_Smartphone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Imagen" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Fabricante" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>
