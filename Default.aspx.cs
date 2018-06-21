@@ -42,6 +42,7 @@ public partial class _Default : System.Web.UI.Page
 
     protected void PhoneList_PagePropertiesChanging(object sender, PagePropertiesChangingEventArgs e)
     {
-
+        (PhoneList.FindControl("DataPager1") as DataPager).SetPageProperties(e.StartRowIndex, e.MaximumRows, false);
+        this.Llenar();
     }
 }
