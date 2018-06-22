@@ -21,5 +21,24 @@
         <classShapeMoniker Id="78659275-5365-4bf4-aac2-ca9d640971d4" />
       </nodes>
     </associationConnector>
+    <classShape Id="bb60c0c3-5546-4fb4-a082-29a3f02afac7" absoluteBounds="0.75, 6.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/ConexionBDDataContext/Estado_Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca18b17d-a81b-491f-85e6-6a4bffca8112" absoluteBounds="0.765, 6.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3acc26d3-7134-4039-8ec1-bb46303c0f65" absoluteBounds="3.5, 5.875, 2, 2.1554996744791675">
+      <DataClassMoniker Name="/ConexionBDDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9433ae1-b8fc-4e72-99a4-4cc386881d82" absoluteBounds="3.515, 6.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.97199625651042); (3.5 : 6.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ConexionBDDataContext/Estado_Usuario/Estado_Usuario_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="bb60c0c3-5546-4fb4-a082-29a3f02afac7" />
+        <classShapeMoniker Id="3acc26d3-7134-4039-8ec1-bb46303c0f65" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

@@ -25,7 +25,7 @@
                 </div>
                 <div class="uk-card-footer">
                     <div class="uk-align-center">
-                        <a class="uk-button boton-ver uk-align-center uk-margin-remove-bottom" onserverclick="Evt_Login" runat="server">Ingresar</a>
+                        <a class="uk-button boton-blue uk-align-center uk-margin-remove-bottom" onserverclick="Evt_Login" runat="server">Ingresar</a>
                     </div>
                 </div>
             </div>

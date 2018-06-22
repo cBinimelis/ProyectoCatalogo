@@ -63,6 +63,7 @@
     margin: -5px;
 }
 
+
 .boton-ver {
     background: #8BEAAF;
     border: 1px solid #8BEAAF;
@@ -78,6 +79,20 @@
         color: #8BEAAF;
     }
 
+.boton-blue {
+    background: #39f;
+    border: 1px solid #39f;
+    color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 250ms ease;
+}
+
+    .boton-blue:hover {
+        background: #ffffff;
+        color: #39f;
+    }
 
 .boton-kuki {
     position: relative;
