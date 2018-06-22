@@ -13,6 +13,15 @@
       <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Imagen" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
       <Column Name="id_Fabricante" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pantalla" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Procesador" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Camara" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Memoria" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Almacenamiento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SistemaOperativo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Bateria" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SAP" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CodigoBarra" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="Fabricante_Smartphone" Member="Fabricante" ThisKey="id_Fabricante" OtherKey="id_Fabricante" Type="Fabricante" IsForeignKey="true" />
     </Type>
   </Table>

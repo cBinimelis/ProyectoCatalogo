@@ -219,6 +219,24 @@ public partial class Smartphone : INotifyPropertyChanging, INotifyPropertyChange
 	
 	private int _id_Fabricante;
 	
+	private string _Pantalla;
+	
+	private string _Procesador;
+	
+	private string _Camara;
+	
+	private string _Memoria;
+	
+	private string _Almacenamiento;
+	
+	private string _SistemaOperativo;
+	
+	private string _Bateria;
+	
+	private string _SAP;
+	
+	private string _CodigoBarra;
+	
 	private EntityRef<Fabricante> _Fabricante;
 	
     #region Definiciones de métodos de extensibilidad
@@ -233,6 +251,24 @@ public partial class Smartphone : INotifyPropertyChanging, INotifyPropertyChange
     partial void OnImagenChanged();
     partial void Onid_FabricanteChanging(int value);
     partial void Onid_FabricanteChanged();
+    partial void OnPantallaChanging(string value);
+    partial void OnPantallaChanged();
+    partial void OnProcesadorChanging(string value);
+    partial void OnProcesadorChanged();
+    partial void OnCamaraChanging(string value);
+    partial void OnCamaraChanged();
+    partial void OnMemoriaChanging(string value);
+    partial void OnMemoriaChanged();
+    partial void OnAlmacenamientoChanging(string value);
+    partial void OnAlmacenamientoChanged();
+    partial void OnSistemaOperativoChanging(string value);
+    partial void OnSistemaOperativoChanged();
+    partial void OnBateriaChanging(string value);
+    partial void OnBateriaChanged();
+    partial void OnSAPChanging(string value);
+    partial void OnSAPChanged();
+    partial void OnCodigoBarraChanging(string value);
+    partial void OnCodigoBarraChanged();
     #endregion
 	
 	public Smartphone()
@@ -321,6 +357,186 @@ public partial class Smartphone : INotifyPropertyChanging, INotifyPropertyChange
 				this._id_Fabricante = value;
 				this.SendPropertyChanged("id_Fabricante");
 				this.Onid_FabricanteChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Pantalla", DbType="VarChar(50)")]
+	public string Pantalla
+	{
+		get
+		{
+			return this._Pantalla;
+		}
+		set
+		{
+			if ((this._Pantalla != value))
+			{
+				this.OnPantallaChanging(value);
+				this.SendPropertyChanging();
+				this._Pantalla = value;
+				this.SendPropertyChanged("Pantalla");
+				this.OnPantallaChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Procesador", DbType="VarChar(50)")]
+	public string Procesador
+	{
+		get
+		{
+			return this._Procesador;
+		}
+		set
+		{
+			if ((this._Procesador != value))
+			{
+				this.OnProcesadorChanging(value);
+				this.SendPropertyChanging();
+				this._Procesador = value;
+				this.SendPropertyChanged("Procesador");
+				this.OnProcesadorChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Camara", DbType="VarChar(50)")]
+	public string Camara
+	{
+		get
+		{
+			return this._Camara;
+		}
+		set
+		{
+			if ((this._Camara != value))
+			{
+				this.OnCamaraChanging(value);
+				this.SendPropertyChanging();
+				this._Camara = value;
+				this.SendPropertyChanged("Camara");
+				this.OnCamaraChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Memoria", DbType="VarChar(50)")]
+	public string Memoria
+	{
+		get
+		{
+			return this._Memoria;
+		}
+		set
+		{
+			if ((this._Memoria != value))
+			{
+				this.OnMemoriaChanging(value);
+				this.SendPropertyChanging();
+				this._Memoria = value;
+				this.SendPropertyChanged("Memoria");
+				this.OnMemoriaChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Almacenamiento", DbType="VarChar(50)")]
+	public string Almacenamiento
+	{
+		get
+		{
+			return this._Almacenamiento;
+		}
+		set
+		{
+			if ((this._Almacenamiento != value))
+			{
+				this.OnAlmacenamientoChanging(value);
+				this.SendPropertyChanging();
+				this._Almacenamiento = value;
+				this.SendPropertyChanged("Almacenamiento");
+				this.OnAlmacenamientoChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SistemaOperativo", DbType="VarChar(50)")]
+	public string SistemaOperativo
+	{
+		get
+		{
+			return this._SistemaOperativo;
+		}
+		set
+		{
+			if ((this._SistemaOperativo != value))
+			{
+				this.OnSistemaOperativoChanging(value);
+				this.SendPropertyChanging();
+				this._SistemaOperativo = value;
+				this.SendPropertyChanged("SistemaOperativo");
+				this.OnSistemaOperativoChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Bateria", DbType="VarChar(50)")]
+	public string Bateria
+	{
+		get
+		{
+			return this._Bateria;
+		}
+		set
+		{
+			if ((this._Bateria != value))
+			{
+				this.OnBateriaChanging(value);
+				this.SendPropertyChanging();
+				this._Bateria = value;
+				this.SendPropertyChanged("Bateria");
+				this.OnBateriaChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SAP", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+	public string SAP
+	{
+		get
+		{
+			return this._SAP;
+		}
+		set
+		{
+			if ((this._SAP != value))
+			{
+				this.OnSAPChanging(value);
+				this.SendPropertyChanging();
+				this._SAP = value;
+				this.SendPropertyChanged("SAP");
+				this.OnSAPChanged();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CodigoBarra", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+	public string CodigoBarra
+	{
+		get
+		{
+			return this._CodigoBarra;
+		}
+		set
+		{
+			if ((this._CodigoBarra != value))
+			{
+				this.OnCodigoBarraChanging(value);
+				this.SendPropertyChanging();
+				this._CodigoBarra = value;
+				this.SendPropertyChanged("CodigoBarra");
+				this.OnCodigoBarraChanged();
 			}
 		}
 	}
