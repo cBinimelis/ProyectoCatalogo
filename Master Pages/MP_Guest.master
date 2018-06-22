@@ -30,7 +30,7 @@
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
     </div>
-    <div>
+    <div class="uk-position-top">
         <div class="cLetter" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200" style="background-color: #8bea8b;">
 
             <nav class="uk-navbar-container">
@@ -65,7 +65,7 @@
         <div class="uk-offcanvas-content" style="font-family: 'Indie Flower', cursive;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            <div class="uk-section-secondary uk-section-xsmall">
+            <div class="uk-section-secondary uk-section-xsmall uk-position-bottom">
                 <div class="uk-container">
                     <p class=" uk-text-center">
                         Cristofer Binimelis | <b>2018</b> | 
