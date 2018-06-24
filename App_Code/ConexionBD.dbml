@@ -25,23 +25,24 @@
       <Association Name="Fabricante_Smartphone" Member="Fabricante" ThisKey="id_Fabricante" OtherKey="id_Fabricante" Type="Fabricante" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.Estado_Usuario" Member="Estado_Usuario">
-    <Type Name="Estado_Usuario">
-      <Column Name="id_EstadoUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Association Name="Estado_Usuario_Usuario" Member="Usuario" ThisKey="id_EstadoUsuario" OtherKey="id_EstadoUsuario" Type="Usuario" />
-    </Type>
-  </Table>
   <Table Name="dbo.Usuario" Member="Usuario">
     <Type Name="Usuario">
       <Column Name="id_Usuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
       <Column Name="Password" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
       <Column Name="Nombres" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="Apellidos" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="Imagen" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
       <Column Name="id_EstadoUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="Estado_Usuario_Usuario" Member="Estado_Usuario" ThisKey="id_EstadoUsuario" OtherKey="id_EstadoUsuario" Type="Estado_Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado_Usuario" Member="Estado_Usuario">
+    <Type Name="Estado_Usuario">
+      <Column Name="id_EstadoUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Estado_Usuario_Usuario" Member="Usuario" ThisKey="id_EstadoUsuario" OtherKey="id_EstadoUsuario" Type="Usuario" />
     </Type>
   </Table>
   <Function Name="dbo.vPhones" Method="vPhones">

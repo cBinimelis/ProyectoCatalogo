@@ -29,9 +29,24 @@ public partial class Login : System.Web.UI.Page
                 SqlDataReader Usuario = sql.consulta("SELECT * FROM Usuario WHERE Username = '" + User + "' OR Correo = '" + User + "'");
                 if (Usuario.Read())
                 {
-                    if (Usuario[2].ToString().Equals(Pass))
+                    if (Usuario[3].ToString().Equals(Pass))
                     {
-
+                        switch (Convert.ToInt32(Usuario[7].ToString())){
+                            case 1:
+                                Session["Admin"] = Usuario[0].ToString();
+                                Session["Img"] = Usuario[6].ToString();
+                                Response.Redirect("NavAdmin/Inicio.aspx");
+                                break;
+                            case 2:
+                                Mensaje("Hay un detalle...", "Tu cuenta está suspendida", "warning");
+                                break;
+                            case 3:
+                                Mensaje("Creo que deberías saberlo", "Tu cuenta ha sido eliminada", "error");
+                                break;
+                            default:
+                                Mensaje("Ups", "No se han podido corroborar tus datos", "error");
+                                break;
+                        }
                     }
                     else
                     {
