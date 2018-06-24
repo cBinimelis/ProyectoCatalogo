@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master Pages/MP_Admin.master" AutoEventWireup="true" CodeFile="Inicio.aspx.cs" Inherits="NavAdmin_Inicio" %>
+﻿<%@ Page Title="Ambiente Privado" Language="C#" MasterPageFile="~/Master Pages/MP_Admin.master" AutoEventWireup="true" CodeFile="Inicio.aspx.cs" Inherits="NavAdmin_Inicio" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

@@ -36,7 +36,7 @@ public partial class _Default : System.Web.UI.Page
         if (e.CommandName == "Select")
         {
             int ID = Convert.ToInt32(e.CommandArgument);
-            Response.Redirect("DetalleSmartphone.aspx?Id=" + ID);
+            Response.Redirect("DetallesSmartphone.aspx?Id=" + ID);
         }
     }
 

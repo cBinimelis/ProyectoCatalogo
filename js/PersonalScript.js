@@ -15,17 +15,17 @@ $(window).on('load', function () {
 
 });
 
-$(document).ready(function () {
+//$(document).ready(function () {
 
-    var top;
-    $(window).scroll(function () {
-        top = ($(window).scrollTop() * 0.4) + 'px';
-        $('.diagonal .fondo-parallax').css({
-            'background-position': '0 ' + top
-        });
-    });
+//    var top;
+//    $(window).scroll(function () {
+//        top = ($(window).scrollTop() * 0.4) + 'px';
+//        $('.diagonal .fondo-parallax').css({
+//            'background-position': '0 ' + top
+//        });
+//    });
 
-});
+//});
 
 function Contar() {
     $('.count').each(function () {
