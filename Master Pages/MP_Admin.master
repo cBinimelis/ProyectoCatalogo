@@ -2,20 +2,78 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es-cl">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link id="favicon1" runat="server" rel="shortcut icon" href="~/img/Jumbo.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="../css/uikit.min.css" />
+    <link href="../css/Personal.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f19bff">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+    <script src="../js/sweetalert.min.js"></script>
+    <script src="../js/PersonalScript.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+    <div id="loader-wrapper">
+        <div id="loader" class="uk-position-center">
+            <div id="ball-1" class="circle"></div>
+            <div id="ball-2" class="circle"></div>
+            <div id="ball-3" class="circle"></div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
     </div>
+    <div class="uk-position-top" style="z-index:10">
+        <div class="cLetter" uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200" style="background-color: #8bea8b;">
+
+            <nav class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+                    <div uk-navbar>
+                        <ul class="uk-navbar-nav cLetter">
+                            <li class="uk-active"><a href="#Inicio" uk-scroll>Inicio</a></li>
+                            <li>
+                                <a href="#Catalogo" uk-scroll>Equipos</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Samsung</a></li>
+                                        <li><a href="#">LG</a></li>
+                                        <li><a href="#">Huawei</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="Login.aspx">Sesion</a></li>
+                        </ul>
+
+                        <div class="uk-navbar-right">
+                            <a href="Inicio.aspx" class="uk-navbar-item uk-logo">
+                                <img src="../img/Jumbo.ico" style="height: 100%" alt="Logo" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+        <div class="uk-offcanvas-content" style="font-family: 'Indie Flower', cursive;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="uk-section-secondary uk-section-xsmall uk-position-bottom">
+                <div class="uk-container">
+                    <p class=" uk-text-center">
+                        Cristofer Binimelis | <b>2018</b> | 
+                        <a href="https://github.com/cBinimelis" class="uk-icon-button" uk-icon="github"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </form>
 </body>
 </html>
