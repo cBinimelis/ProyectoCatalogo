@@ -419,3 +419,32 @@
         opacity: 0;
     }
 }
+
+.esquina {
+    padding: 2em;
+}
+
+    .esquina div {
+        width: calc(100% - 8em);
+        padding: 4em;
+        margin: 0 auto;
+    }
+
+        .esquina div:before, .esquina div:after {
+            content: "";
+            width: 10em;
+            height: 5em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-left: 1em solid black;
+            border-top: 1em solid black;
+        }
+
+        .esquina div:after {
+            transform: rotate(-180deg);
+            top: initial;
+            left: initial;
+            bottom: 0;
+            right: 0;
+        }
