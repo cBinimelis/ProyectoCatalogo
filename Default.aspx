@@ -4,12 +4,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="uk-section uk-padding" style="background-color: #8bea8b">
-        <h1 class="uk-light cLetter"><b>Catalogo de Smartphones</b></h1>
     </div>
     <div class="uk-section seccion-diagonal" style="background-color: #ffffff">
         <div class="fondo-diagonal" style="background-color: #8bea8b;"></div>
     </div>
     <div id="Catalogo" class="uk-section">
+        <h1 class="cLetter uk-text-center"><b>Catalogo de Smartphones</b></h1>
         <div class="uk-container">
             <div class="uk-padding uk-flex-center" uk-grid>
                 <asp:TextBox CssClass="uk-input uk-form-width-large" placeholder="Ingrese un equipo o marca a buscar..." autocomplete="off" ID="TextBox1" runat="server"></asp:TextBox>

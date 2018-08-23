@@ -37,12 +37,12 @@
                 <div class="uk-container uk-container-expand">
                     <div uk-navbar>
                         <ul class="uk-navbar-nav cLetter">
-                            <li class="uk-active"><a href="#Inicio" uk-scroll>Inicio</a></li>
+                            <li class="uk-active"><a href="../default.aspx" uk-scroll>Inicio</a></li>
                             <li>
                                 <a href="#Catalogo" uk-scroll>Equipos</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Samsung</a></li>
+                                        <li><a href="#">Samsung</a></li>
                                         <li><a href="#">LG</a></li>
                                         <li><a href="#">Huawei</a></li>
                                     </ul>
@@ -65,7 +65,7 @@
         <div class="uk-offcanvas-content" style="font-family: 'Indie Flower', cursive;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            <div class="uk-section-secondary uk-section-xsmall uk-position-bottom">
+            <div class="uk-section-secondary uk-section-xsmall">
                 <div class="uk-container">
                     <p class=" uk-text-center">
                         Cristofer Binimelis | <b>2018</b> | 
