@@ -16,7 +16,7 @@
         <div class="uk-container">
             <div class="uk-card uk-card-body">
                 <h1 class="uk-text-center uk-heading-line uk-padding-small">
-                    <asp:Label ID="TituloJ" runat="server" Text="Waifu-Movil para rellenar"></asp:Label></h1>
+                    <asp:Label ID="lbl_Titulo" runat="server" Text="Waifu-Movil para rellenar"></asp:Label></h1>
                 <div class="uk-child-width-1-2" uk-grid>
                     <div>
                         <img src="img/DefaultPhone.jpg" />
@@ -28,31 +28,31 @@
                         </p>
                         <p>
                             <b>Procesador: </b>
-                            <asp:Label ID="Label1" runat="server" Text="Medio Nucleo 1.4Mhz"></asp:Label>
+                            <asp:Label ID="lbl_procesador" runat="server" Text="Medio Nucleo 1.4Mhz"></asp:Label>
                         </p>
                         <p>
                             <b>Cámara: </b>
-                            <asp:Label ID="Label2" runat="server" Text="VGA"></asp:Label>
+                            <asp:Label ID="lbl_camara" runat="server" Text="VGA"></asp:Label>
                         </p>
                         <p>
                             <b>Pantalla: </b>
-                            <asp:Label ID="Label3" runat="server" Text="Bonita"></asp:Label>
+                            <asp:Label ID="lbl_pantalla" runat="server" Text="Bonita"></asp:Label>
                         </p>
                         <p>
                             <b>Memoria RAM: </b>
-                            <asp:Label ID="Label4" runat="server" Text="1 Chilion"></asp:Label>
+                            <asp:Label ID="lbl_ram" runat="server" Text="1 Chilion"></asp:Label>
                         </p>
                         <p>
                             <b>Almacenamiento: </b>
-                            <asp:Label ID="Label5" runat="server" Text="La respuesta está en tu corazón"></asp:Label>
+                            <asp:Label ID="lbl_rom" runat="server" Text="La respuesta está en tu corazón"></asp:Label>
                         </p>
                         <p>
                             <b>Sistema Operativo: </b>
-                            <asp:Label ID="Label6" runat="server" Text="Java"></asp:Label>
+                            <asp:Label ID="lbl_so" runat="server" Text="Java"></asp:Label>
                         </p>
                         <p>
                             <b>Batería: </b>
-                            <asp:Label ID="Label7" runat="server" Text="Dura todo el día"></asp:Label>
+                            <asp:Label ID="lbl_bateria" runat="server" Text="Dura todo el día"></asp:Label>
                         </p>
                     </div>
                 </div>

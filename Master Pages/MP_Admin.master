@@ -65,7 +65,7 @@
         <div class="uk-offcanvas-content" style="font-family: 'Indie Flower', cursive;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            <div class="uk-section-secondary uk-section-xsmall uk-position-bottom">
+            <div class="uk-section-secondary uk-section-xsmall">
                 <div class="uk-container">
                     <p class=" uk-text-center">
                         Cristofer Binimelis | <b>2018</b> | 

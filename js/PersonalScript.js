@@ -11,8 +11,6 @@
 $(window).on('load', function () {
     $('body').toggleClass('loaded');
     Contar();
-    MantenerDiv();
-
 });
 
 //$(document).ready(function () {
@@ -79,15 +77,3 @@ function VPrevia(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
-
-function MantenerDiv() {
-    var div = document.getElementById("Catalogo");
-    var div_position = document.getElementById("div_position");
-    var position = parseInt('<%=Request.Form["div_position"] %>');
-    if (isNaN(position)) {
-        position = 0;
-    }
-    div.scrollTop = position;
-    div.onscroll = function () {
-        div_position.value = div.scrollTop;
-    };}
